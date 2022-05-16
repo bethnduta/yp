@@ -2,7 +2,9 @@
 
 {% block body%}
 <h1>BLOGS</h1>
+<ul class="list-group">
 {% for blog in blogs %}
-{{blog.title}}
+<li class="list-group-item"> <a href="{{blogs.id}}">{{blog.title}}</a> </li> 
 {% endfor %}
+</ul>
 {% endblock %}

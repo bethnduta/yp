@@ -13,9 +13,13 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/blog')
-def blog():
+@app.route('/blogs')
+def blogs():
     return render_template('blog.html',blogs=Blogs)
+
+@app.route('/blog/<string:id>/')
+def blog(id):
+    return render_template('blogs.html',blogs=Blogs)
 
 
 if __name__ == '__main__':
