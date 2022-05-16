@@ -1,0 +1,8 @@
+{% extends 'home.html' %}
+
+{% block body%}
+<h1>BLOGS</h1>
+{% for blog in blogs %}
+{{blog.title}}
+{% endfor %}
+{% endblock %}
