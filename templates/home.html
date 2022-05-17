@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+   <div class="container" style="color: rgb(176, 220, 246); font-size:22px;">
     {% for post in posts %}
     <h1>{{ post.title }}</h1>
     <p>By: {{post.author}} on {{ post.date_posted }}</p>
     <p>{{post.content}}</p>
     {% endfor %}
+   </div>
+   <a class="btn btn-lg btn-success" href="/login">GET STARTED</a>
 
     {% endblock %}
