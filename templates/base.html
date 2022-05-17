@@ -20,7 +20,7 @@
             <li><a href="#">Page 2</a></li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user" style="font-size: 18px ;"></span> Sign Up</a></li>
+            <li><a href="/register"><span class="glyphicon glyphicon-user" style="font-size: 18px ;"></span> Sign Up</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in" style="font-size: 18px ; "></span> Login</a></li>
           </ul>
         </div>
@@ -35,6 +35,7 @@
           {{ message }}
       </div>
       {% endfor %}
+      {% endif %}
       {% endwith %}
       {% block content %} {% endblock %}
   </div>
