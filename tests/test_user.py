@@ -16,3 +16,7 @@ class TestUser(unittest.TestCase):
 
   def test_user_instance(self):
     self.assertTrue(isinstance(self.new_user, User))
+    
+    
+if __name__ == '__main__':
+  unittest.main()
