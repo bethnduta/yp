@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div class="container" style="color: rgb(176, 220, 246); font-size:22px;">
+    <img src="{{url_for('static', filename='img/' + post.author.img_file) }}" alt="" class="rounded-circle post-img">
+    <h1>{{ post.title }}</h1>
+    <p>By: {{post.author.username}}</p>
+    <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+    <p>{{post.content}}</p>
+    {% endfor %}
+   </div>
+   <a class="btn btn-lg btn-success" href="/login">GET STARTED</a>
+
+    {% endblock %}
