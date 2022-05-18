@@ -98,8 +98,7 @@ def new_post():
         db.session.add(post)
         flash('Your post has been created', 'success')
         return redirect(url_for('home'))
-    return render_template('create_post.html', title='New Post', 
-                           form=form, legend='new Post')
+    return render_template('create_post.html', title='New Post', form=form, legend='new Post')
 
 # @app.route("/post/<int:post_id>")
 # def post(post_id):
@@ -122,8 +121,7 @@ def post(post_id):
     elif request.method == 'GET':
         form.title.data = post.title
         form.content.data = post.content
-    return render_template('create_post.html', title='Update Post', 
-                           form=form, legend='Update Post')
+    return render_template('post.html', title='Update Post', form=form, legend='Update Post')
         
  
 @app.route("/post/<int:post_id>/delete",  methods=['POST'])
