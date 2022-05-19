@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-         <a class="btn btn-lg btn-success" href="/login">GET STARTED</a>
+         <a class="btn btn-lg btn-success" href="{{url_for('login')}}">GET STARTED</a>
    
       <div class="container" style="color: rgb(176, 220, 246); font-size:22px;">
          {% for post in posts %}

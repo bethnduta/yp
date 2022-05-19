@@ -1,0 +1,23 @@
+
+<div class="header">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-nav mr-auto">
+            <a class="navbar-brand"  href="/login" style="font-size: 18px;" >Blog Website</a>
+            <a href="/register" class="navbar-brand"  style="font-size: 18px ;">Blogs</a>
+            <a href="/post/new" class="navbar-brand" style="font-size:18px;">POSTS</a>
+            
+            <a href="/account" class="navbar-brand"  style="font-size: 18px ;">ACCOUNT</a>
+          </div>
+          <div>
+          <ul class="nav navbar-nav navbar-right">
+            {% if current_user.is_authenticted %}
+            <li><a href="{{url_for('logout')}}"><span class="glyphicon glyphicon-log-in" style="font-size: 18px ; "></span> Logout</a></li>
+            {% else %}
+            <li><a href="/register"><span class="glyphicon glyphicon-user" style="font-size: 18px ;"></span> REGISTER</a></li>
+            <li><a href="{{url_for('login')}}"><span class="glyphicon glyphicon-log-in" style="font-size: 18px ; "></span> Login</a></li>
+            {% endif %}
+            </ul>
+          </div>
+        </nav>
+        </div>
