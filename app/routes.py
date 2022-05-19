@@ -2,7 +2,6 @@ import os
 from random import random
 import secrets
 from PIL import Image
-from turtle import update
 from flask import render_template,flash,redirect,url_for,request,abort
 from app import app, db, bcrypt
 from app.forms import RegisterForm,LoginForm,updateAccountForm, PostForm
