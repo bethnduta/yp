@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-         <a class="btn btn-lg btn-success" href="{{url_for('login')}}">GET STARTED</a>
+        <div class="container">
+          <div class="card">
+            <div class="card-body">
+              <h1 style="color:white">Personal blog website</h1>
+              <small>BLOG#1</small>
+              <h1 style="color:rgba(215, 232, 237, 0.905)">A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.</h1>
+              <a class="btn btn-lg btn-success" href="{{url_for('login')}}">READ MORE</a>
+            </div>
+          </div>
+          
+        </div>
+        
    
       <div class="container" style="color: rgb(176, 220, 246); font-size:22px;">
          {% for post in posts %}

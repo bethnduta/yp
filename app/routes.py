@@ -48,6 +48,7 @@ def login():
             else:
                 flash('unssuccessful log in, confirm email and password','danger')
     return render_template('login.html', title='Login', form=form)
+            
 
 @app.route("/logout")
 def logout():
