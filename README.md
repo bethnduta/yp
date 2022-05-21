@@ -14,7 +14,7 @@ As a user you can;
 
 ## SETUP/INSTALLATION REQUIREMENTS
 To access the code:
-* Clone the repo:
+* Clone the repo:https://github.com/bethnduta/yp.git
 * Go to the folder and install the requirements dc PERSONAL BLOG pip install -r requirements.txt
 * Test the application [python3.9manage.py] Open the application on the browser using the local host 127.0.0.1.5000
 
